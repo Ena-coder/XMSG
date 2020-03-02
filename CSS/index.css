@@ -1,0 +1,217 @@
+body{
+  margin: 0;
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #757575;
+}
+li{
+  list-style-type: none;
+}
+.site-topbar{
+  background: #333;
+  color: #b0b0b0;
+  height: 40px;
+  font-size: 12px;
+}
+.container{
+  width: 1226px;
+  margin: 0 auto;
+}
+.container::before , .container::after{
+  content: " ";
+  display: table;
+}
+.container::after{
+  clear: both;
+}
+.site-topbar .topbar-nav{
+  float: left;
+}
+.site-topbar a{
+  color: #b0b0b0;
+  line-height: 40px;
+  display: inline-block;
+}
+.site-topbar a:hover{
+  color: #ffffff;
+}
+.site-topbar .sep{
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 .25em;
+  color: #424242;
+}
+.site-topbar .message{
+  padding: 0 10px;
+}
+.site-topbar .topbar-cart a{
+  width: 120px;
+  margin-left: 15px;
+  text-align: center;
+  background: #424242;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  position: relative;
+  z-index: 10;
+}
+.site-topbar .topbar-cart a:hover{
+  color: #ff6700;
+  background: #ffffff;
+}
+.site-topbar .topbar-cart a:hover +.cart-menu{
+  transform: scale(1.00,1.00);
+	transform-origin:0% 0%;
+}
+.site-topbar .topbar-cart .cart-menu{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 316px;
+  padding-top: 18px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15);
+  background: #ffffff;
+  z-index: 9;
+  transition:transform .25s;
+  transform: scale(1.00,0.00);
+	transform-origin:0% 0%;
+}
+.site-topbar .topbar-cart .cart-menu:hover{
+  transform: scale(1.00,1.00);
+}
+.site-topbar .cart-menu .loading{
+  margin: 5px 20px 20px;
+  padding: 20px 0px;
+  text-align: center;
+}
+.site-topbar .cart-menu .loader{
+  color: #757575;
+}
+.site-topbar .cart-mini i{
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: -4px;
+}
+.site-topbar .topbar-info ,
+.site-topbar .topbar-cart {
+  position: relative;
+  float: right;
+  height: 40px;
+  display: inline;
+}
+.topbar-info a{
+  float: left;
+  padding: 0 5px;
+}
+.topbar-info span{
+  float: left;
+}
+
+
+
+/* header */
+.site-header{
+  height: 100px;
+}
+.site-header .header-logo{
+  width: 62px;
+  float: left;
+  margin-top: 22px;
+}
+.site-header .header-logo a{
+  width: 55px;
+  height: 55px;
+  display: block;
+  background-color: #ff6700;
+  background-image: url(../img/mi-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:50% 50%;
+  overflow: hidden;
+}
+.site-header .header-nav{
+  float: left;
+  width: 850px;
+}
+.header-nav .nav-list{
+  width: 820px;
+  height: 88px;
+  padding: 12px 0 0 30px;
+  font-size: 16px;
+  float: left;
+  margin: 0px;
+}
+.site-header .nav-category{
+  float: left;
+  padding-right: 15px;
+  width: 127px;
+}
+.site-header .nav-item{
+  float: left;
+}
+.site-header .link{
+  display: block;
+  padding: 26px 10px 38px;
+  color: #333;
+}
+.site-header .item-children .container{
+  position: absolute;
+  top:140px;
+  background: yellow;
+  z-index: 99999;
+}
+.site-header .item-children li{
+  float: left;
+}
+.site-header .link-category{
+  display: block;
+  padding-top: 26px;
+  padding-bottom:38px;
+  color: #333;
+  text-align: right;
+}
+
+.site-header .nav-item .link:hover{
+  color: #ff6700;
+}
+.site-header .header-search{
+  float: right;
+  width: 296px;
+  height: 50px;
+  margin-top: 25px;
+}
+.site-header .search-form {
+  position: relative;
+}
+.site-header .search-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 1px solid #e0e0e0;
+  width: 245px;
+  height: 50px;
+  padding:0 10px;
+  outline: 0;
+}
+.site-header .search-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:2;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 1px 6px;
+  width: 52px;
+  height: 50px;
+  background-image: url(../img/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+}
+.site-header .search-btn:hover{
+  background-color: #ff6700;
+  background-image: url(../img/search-active.png);
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿站小米商城</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/iconfont.css">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/seckill.css">
+  <link rel="stylesheet" href="./CSS/base.css">
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <div class="site-topbar">
+    <div class="container">
+      <div class="topbar-nav">
+        <a href="#">小米商城</a>
+        <span class="sep">|</span>
+        <a href="#">MIUI</a>
+        <span class="sep">|</span>
+        <a href="#">IoT</a>
+        <span class="sep">|</span>
+        <a href="#">云服务</a>
+        <span class="sep">|</span>
+        <a href="#">金融</a>
+        <span class="sep">|</span>
+        <a href="#">有品</a>
+        <span class="sep">|</span>
+        <a href="#">小爱开放平台</a>
+        <span class="sep">|</span>
+        <a href="#">企业团购</a>
+        <span class="sep">|</span>
+        <a href="#">资质证照</a>
+        <span class="sep">|</span>
+        <a href="#">协议规则</a>
+        <span class="sep">|</span>
+        <a href="#">下载app</a>
+        <span class="sep">|</span>
+      </div>
+      <div class="topbar-cart">
+        <a href="" class="cart-mini">
+          <i class="iconfont">&#xe747</i>
+          <span class="cart-mini-num J_cartNum">购物车 (0)</span>
+        </a>
+        <div class="cart-menu">
+          <div class="loading">
+            <div class="loader">
+              购物车中还没有商品，赶紧选购吧！
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topbar-info">
+        <a href="#">登录</a>
+        <span class="sep">|</span>
+        <a href="#">注册</a>
+        <span class="sep">|</span>
+        <a href="#" class="message">消息通知</a>
+      </div>
+    </div>
+  </div>
+  <!-- 商品分类 -->
+  <div class="site-header">
+    <div class="container">
+      <div class="header-logo">
+        <a class="logo" href="#" title="小米官网"></a>
+      </div>
+      <div class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-category">
+            <a href="" class="link-category">
+              <span class="text">全部商品分类</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">小米手机</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">Redmi 红米</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">电视</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">笔记本</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">家电</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">路由器</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">智能硬件</span class="text">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">服务</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <span class="text">社区</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-search">
+        <form action="" class="search-form clearfix">
+          <input class="search-text" type="search" name="keyword" id="search">
+          <input class="search-btn iconfont" type="submit" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 秒杀活动 -->
+  <div class="seckill">
+    <div class="seckill-head">
+      <h1>小米秒杀</h1>
+    </div>
+    <div class="container J_seckill">
+      <div class="seckill-banner" id="banner">
+        <div class="container relative">
+          <!-- 活动未开始 -->
+          <div class="modal-nostart">
+            <i></i>活动未开始
+          </div>
+          <ul id="tabs">
+            <li class="active">
+              <a href="#">
+                <em>10:00</em>
+                <span>即将开始</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>14:00</em>
+                <span>即将开始</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>20:00</em>
+                <span>即将开始</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>22:00</em>
+                <span>即将开始</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>00:00</em>
+                <span>即将开始</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seckill-con">
+        <span class="container" id="lists">
+          <ul class="clearfix active">
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/db0c370f85f438f4dda6cce9a770f7f2.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7ec801fd82c2e2f2728cdc1dd5098ee.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c97afe622ee275fe873abd9f80a31e6d.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1cc3e7d4245897e2fd73b7bca07b429f.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/722cd1cea853d9b00b0c3219d0835d72.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="clearfix ">
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/159e9dc6948ff33fb231c10c0c7700f1.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/01d083243059e6fb6882e9f86f2a2e1c.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/10e5811e5d3b88c0ab1e58d59e08e062.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1cc3e7d4245897e2fd73b7bca07b429f.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/31b511df09a9088a0a6c359769787d5a.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5ef62eeb7a0709f80170973680994267.png" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e8bb18db1828d769fb7537763a4db1.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744f6ac43135ec89fbe493491f79394b.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5abdef0a4506d2c3bfa8a91118d555c8.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ba2e3cf34aa9dfd78e51fd72cb26e81f.png" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b1edd7080f8d48729257a91ad8232342.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb4f63b5b5692a44283099a66c755260.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="clearfix ">
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f3806c02e0a87f7faf79fdd1d2a98513.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a3593f6ee74115531a529226b64702f9.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6f7e12e9f7fa596d7138fa704c82cafe.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-box">
+                <span class="img-con">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/abe6691be6540c02a749928cabffc4dd.jpg" alt="">
+                </span>
+                <span class="pro-con">
+                  <span class="name">MIJOY 抽纸青春版 24包/箱  </span>
+                  <span class="desc">精选原生竹浆，健康环保</span>
+                  <span class="price">
+                    27.9元
+                    <del>32.9元</del>
+                  </span>
+                  <span class="btn btn-green btn-small btn-primary J_login">登录后抢购</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <div class="seckill-empty hide contianer J_seckillEmpty">
+      暂无秒杀活动
+    </div>
+    <div class="container notic">
+      *小米秒杀活动规则：
+      <br>
+      1.秒杀商品是否参加活动、最终秒杀成功的商品，以订单结算页显示为准，活动包括但不限于优惠券、赠品、满减、满赠等；
+      <br>
+      2.秒杀商品数量有限，活动以下单支付成功为准，请加入购物车后尽快下单支付;
+      <br>
+      3.秒杀价不含运费，最终以订单结算页价格为准；
+      <br>
+      4.订单中商品的数量、颜色、型号等，以订单结算页为准。
+      <br>
+      温馨提示：因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系小米客服，以便我们及时补正。
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="footer-service">
+        <ul class="list-service clearfix">
+          <li>
+            <a href="#">
+              <i class="iconfont">&#xe76e</i>
+              预约维修服务
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="iconfont">&#xe744</i>
+              7天无理由退货
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="iconfont">&#xe766</i>
+              15天免费换货
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="iconfont">&#xe753</i>
+              满99包邮
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="iconfont">&#xe758</i>
+              520余家售后网点
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links clearfix">
+        <dl class="col-links col-links-first">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <dl class="col-links">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <dl class="col-links">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <dl class="col-links">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <dl class="col-links">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <dl class="col-links">
+          <dt>帮助中心</dt>
+          <dd>
+            <a href="#">账户管理</a>
+          </dd>
+          <dd>
+            <a href="#">购物指南</a>
+          </dd>
+          <dd>
+            <a href="#">订单操作</a>
+          </dd>
+        </dl>
+        <div class="col-contact">
+          <p class="phone">400-100-5678</p>
+          <p>
+            周一至周日 8:00-18:00
+            <br>
+            （仅收市话费）
+          </p>
+          <a href="#" class="btn btn-line-primary btn-small">
+            <i class="iconfont">&#xe766</i>人工客服
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-info">
+    <div class="container">
+      <div class="logo ir">小米官网</div>
+      <div class="info-text">
+        <p class="sites">
+          <a href="#">小米商城</a>
+          <span class="sep">|</span>
+          <a href="#">MIUI</a>
+          <span class="sep">|</span>
+          <a href="#">米家</a>
+          <span class="sep">|</span>
+          <a href="#">米聊</a>
+          <span class="sep">|</span>
+          <a href="#">多看</a>
+          <span class="sep">|</span>
+          <a href="#">游戏</a>
+          <span class="sep">|</span>
+          <a href="#">路由器</a>
+          <span class="sep">|</span>
+          <a href="#">米粉卡</a>
+          <span class="sep">|</span>
+          <a href="#">政企服务</a>
+          <span class="sep">|</span>
+          <a href="#">小米天猫店</a>
+          <span class="sep">|</span>
+          <a href="#">小米集团隐私政策</a>
+          <span class="sep">|</span>
+          <a href="#">米家隐私政策</a>
+          <span class="sep">|</span>
+          <a href="#">小米集团隐私政策</a>
+          <span class="sep">|</span>
+          <a href="#">小米商城用户协议</a>
+          <span class="sep">|</span>
+          <a href="#">问题反馈</a>
+          <span class="sep">|</span>
+          <a href="#">廉正举报</a>
+          <span class="sep">|</span>
+          <a href="#">诚信合规</a>
+        </p>
+        <p>
+          © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号
+          <br>
+          （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告
+          <br>
+          增值电信业务许可证  网络食品经营备案（京）【2018】WLSPJYBAHF-12   食品经营许可证
+          <br>
+          违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+        </p>
+      </div>
+      <div class="info-links">
+        <a href="#">
+          <img src="./img/truste.png" alt="">
+        </a>
+        <a href="#">
+          <img src="./img/v-logo-2.png" alt="">
+        </a>
+        <a href="#">
+          <img src="./img/v-logo-1.png" alt="">
+        </a>
+        <a href="#">
+          <img src="./img/v-logo-3.png" alt="">
+        </a>
+        <a href="#">
+          <img src="./img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="slogan">探索黑科技，小米为发烧而生!</div>
+  </div>
+  <script src="./JS/index.js"></script>
+</body>
+</html>
